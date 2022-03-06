@@ -1,0 +1,304 @@
+<!DOCTYPE html> 
+<!--Sección 13: HTML Básico 73: Qué es html
+Sección 13: HTML Básico 74: Primera etiqueta
+Sección 13: HTML Básico 75: Título, parrafo, salto de línea y horizontal
+Sección 13: HTML Básico 76: Comentario, negrita, cítas y código
+Sección 13: HTML Básico 77: Énfasis o cursiva, preformateado, texto tachado y pequeño
+Sección 13: HTML Básico 78: Strong, subrayado y div
+Sección 14: HTML Básico 79: Formularios e inputs
+Sección 14: HTML Básico 80: textarea, button, select and options
+Sección 14: HTML Básico 81: label, placeholder, fieldset para agrupar campos y legend
+Sección 15: HTML Básico 82: Imagenes y links
+Sección 15: HTML Básico 83: Listas ordenadas y no ordenadas 
+Sección 15: HTML Básico 84: Tablas, cabeceras, pié filas y celdas
+Sección 16: MUY BÁSICO, OMITIDO 
+Sección 17: CSS Básico: 89: cargando selectores, propiedades y valores.
+Sección 17: CSS Básico: 89: Selectores, id, class.
+Sección 18: CSS Modelo de caja. 91: Introducción y margin.
+Seccion 19: CSS: Texto: 96. Color y alineado
+Seccion 19: CSS: Texto: 97. Text decoration, align, transform, indent y height
+Seccion 19: CSS: Texto: 98. Word spacing y text shadow
+Seccion 19: CSS: Texto: 99. Tipos de fuentes
+Sección 20: CSS: Links, listas y tablas: 100. Links parte 1 OMITIDO BÁSICO
+Sección 20: CSS: Links, listas y tablas: 101. Links parte 2 OMITIDO BÁSICO
+Sección 20: CSS: Links, listas y tablas: 102. Listas
+Sección 20: CSS: Links, listas y tablas: 103. Tablas
+Sección 21: CSS: Display, max-width, position, overflow, float, más selectores y opacidad: 104. display.
+Sección 21: CSS: Display, max-width, position, overflow, float, más selectores y opacidad: 105. max-width y position.
+Sección 21: CSS: Display, max-width, position, overflow, float, más selectores y opacidad: 106. overflow.
+Sección 22: CSS: Elementos útiles 108. Cómo construir una barra de navegación
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina curso hola mundo</title> <!-- this give it the name to show it on the top of the page, at the tab--> 
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+    <body>
+        <ul id = "barraNavegacion">
+            <li class = "active"> <!--con active siempre queda el color que dejemos como parámetro-->
+                <a href="#inicio">Inicio</a>
+            </li>
+            <li>
+                <a href="#inicio">Blog</a>
+            </li>
+            <li>
+                <a href="#inicio">Acerca de</a>
+            </li>
+        </ul>
+
+        <hr / >
+        <!--when we use id, is for an unique element. Class is used for multi-elements-->
+        <p id= "parrafo">soy un parrafo</p>
+        <span class = "etiqueta">Esto es un span</span> <!-- it is useful to agrupate contets in a paragraph or adding stiles to this-->
+        <span class = "etiqueta">Este es otro span</span><!-- labels are considerate boxes-->
+        <blockquote>Esta es una cita y se usa para hacer citas</blockquote>
+        <code>Code is useful when we want to write code like html or java in our page</code>
+        <p class ="propiedadesP">for adding bold words to our paragraph we have to add a b <b> <b>and the word made negrita = bold</b></p>
+        <em>we can add text with emphasise in this way!</em>
+        <br /> 
+        <i>in this way we can transform our test to our cursiva, text italic</i>
+        <pre>we can use pre to add to our page text that be preformated</pre>
+        <s>s is for cross out the text</s>
+        <br /> 
+        <small>is for small text</small>
+        <br />
+        <strong>strong accomplish the same of the label b, transform our text to bold text</strong>
+        <br /> 
+        <u>u is for underline the text</u>
+        <div>Div is for divide a part of our page in a section</div>
+        <div>Section 2</div>
+        <div>Section 3</div>
+
+        <form action=""><!--form is for request data to the user-->
+            <fieldset> <!-- fieldset is for agrupate the information of one section in a box-->
+                <legend>Esta es una cajita con fieldset</legend>
+                <label for="">Nombre</label> <!--label is associated to a field-->
+                <input type="text">
+                <label for="edad">Edad</label>
+                <input type="number" name="edad" id="edad">
+                <label for="" >Constraseña</label>
+                <input type="password" placeholder="Pass"> <!--placeholder is for write a text into the field-->
+                <input type="submit" value="aceptar"><!--this is for send the information of our form-->
+                <br>
+                <textarea name="" id="" cols="30" rows="10"> here the user can add text</textarea>
+                <button>Aceptar</button>
+                <br>
+                <br>
+                <br>
+                <select name="" id="" > <!--select show us options like a comboBox-->
+                    <option value="goku">Goku</option> <!--With label option we can sort the different options of our box-->
+                    <option value="vegeta">Vegeta</option>
+                    <option value="gohan">Gohan</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Acá trabajaremos imágenes</legend>
+                <img src="http://placekitten.com/200/200" alt="gatito">
+                <a href="https://www.google.cl">ir a google</a>
+            </fieldset>
+            <fieldset>
+                <legend>Acá trabajaré las listas</legend>
+                <ul><!--Ul represent a no sorted list.-->
+                    <li>primer elemento</li>
+                    <li>segundo elemento</li>
+                    <li>tercer elemento</li>
+                </ul>
+                <ol>
+                    <li>primer</li>
+                    <li>segundo</li>
+                    <li>tercero</li>
+                </ol>
+            </fieldset>
+            <fieldset>
+                <legend>tablas y más</legend>
+                <!--this is the structure of a table. thead, tbody, and tfoot-->
+                <table><!--is to represent a table of 3 dimentions-->
+                    <thead><!--thead is the head of the table-->
+                        <tr> 
+                            <th>mes</th>
+                            <th>ahorros</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Enero</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>Febrero</td>
+                            <td>2000</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Suma total: </td>
+                            <td>1500</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Acá trabajaremos divs</legend>
+                <div class = "caja">HOLA!</div>
+            </fieldset>
+            <fieldset>
+                <legend>Ejercicio caja</legend>
+                <div class = "cajaEj">
+                    <h2>Soy cabecera</h2>
+                    <hr>
+                    <h2>Soy contenido dentro de una caja!</h2>
+                    <hr>
+                    <button class = "botonA">Aceptar</button>
+                    <button class = "botonC">Cancelar</button>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>here i will work on word's lines</legend>
+                <a href="https://google.cl">Link a goooogle!</a>
+                <a id = "a2" href="https://www.facebook.com/">Link a facebook</a>
+            </fieldset>
+            <fieldset>
+                <legend>links</legend>
+                <a href="https://wwww.google.com">gogel</a>
+            </fieldset>
+            <fieldset>
+                <legend>Listas</legend>
+                <ul>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>tablas</legend>
+                <table class = "tablita">
+                    <tr>
+                        <th>Compañia</th>
+                        <th>Contacto</th>
+                        <th>País</th>
+                    </tr>
+                    <tr>
+                        <td>Compañita</td>
+                        <td>asdasd@compañia.com</td>
+                        <td>Chilito</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre de pana</td>
+                        <td>asddsa@completo.cl</td>
+                        <td>Perú</td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Bloques, inlines</legend>
+                <p class ="bloque">Hola, soy un bloque</p>
+                <h1>los h1, h2, etc son un bloque</h1>
+                <p>Hola, soy otro bloque</p>
+                <span>Hola, soy un inline</span> <!--we can change the propiety of inline to block with display: block; -->
+                <div>también es un bloque!</div>
+                <form action=""> un formulario también es un bloque</form>
+                <header>header también</header>
+                <footer>footer es un bloque</footer>
+                <section>otro bloque es section</section>
+                <br>
+                <a href="">Los link son un inline</a>
+                <div id ="invisible">soy invisible!</div> <!--with display none we can set the elements invisible-->
+            </fieldset>
+            <fieldset>
+                <legend>acá se trabajará max width y overflow</legend>
+                <p class= paramax>hello i´m a paragraph and here we work max-width</p>
+                <div id= "over">
+                    this is acontent that i hope can hide. Hidden, hide the content with no posibilities to do scroll on it, scroll does, and auto is the same of scroll.
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Here we work with float selectores y opacidad</legend>
+                <div>
+                    <img src="http://placekitten.com/200/200" alt="">
+                    <p>Este es un parrafo más largo de lo normal dónde se explicará la propiedad float a la foto. 
+                    Esta propiedad toma el bloque y lo deja flotando en la posición que se le indique.
+                    </p>
+                </div>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Here we are gonna work in dropdown mennu</legend>
+                <div class = "dropdown">
+                    <button class ="dropdown-btn">Dropdown</button>
+                    <div class="dropdown-content">
+                        <a href="">link 1</a>
+                        <a href="">link 2</a>
+                        <a href="">link 2</a>
+
+                    </div>
+                <p>hola</p>
+                <p>hola</p>
+                <p>hola</p>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Formulario de contacto</legend>
+                <div class="box">
+                    <form action="">
+                        <label for="">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="name">
+    
+                        <label for="">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+                        
+                        <label for="">Mensaje</label>
+                        <textarea name="textarea" class="textarea" cols="30" rows="10"></textarea>
+                        <input type="submit" value="Aceptar">
+                </div>
+                </form>
+            </fieldset>
+            <fieldset>
+                <ul class="gradiantColor">
+                    <li>
+                        <a href="">holi</a>
+                    </li>
+                    <li>
+                        <a href="">xau</a>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Sombras</legend>
+                <div class=" sombra "">
+                    <p>soy un parrafo dentro de un div owo</p>
+                </div>
+                <p class="sombraParrafo">Soy una caja</p>
+            </fieldset>
+            <fieldset>
+                <legend>Transformaciones en 2d</legend>
+                <div class = "transform2d" >
+                <p>we are going to move , rotate, twist a square(div)</p>     
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend> Transformaciones en 3d</legend>
+                <div class="transform3d">
+                    <p>here we are going to move in 3d</p>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Transiciones animadas</legend>
+                    <div class="animatedTransition"><p>Here we are going to move a div when we put the pointer over the div</p></div> 
+                    
+            </fieldset>
+            <fieldset><legend>Ejercicio de cajas para reportería</legend>
+                <div class="divScale">
+                    <p>1000</p>
+                </div>
+                <div class = "divShadow">
+                    <p>2500</p>
+                </div>
+                <div class = "divActive">
+                    <p>9995</p>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

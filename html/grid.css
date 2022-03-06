@@ -1,0 +1,84 @@
+body{
+    background-color: #eee;   
+}
+
+.grid1{
+    display: grid; /* grid could be grid or inline-grid. Grid take up all margin
+    content whereas inline-grid take up only the space of the column/row
+    grid-template-rows: 50px 100px; this property uses each row and give it a height one for every that we especify
+    grid-template-columns: 1rem 20%  2fr; we can separate in fractions
+    grid-template-rows: minmax(100px, auto); the first is the minimum value of our elements and the second is the maximun
+    grid-template-columns: minmax(auto, 50%) 1fr 3em;
+    grid-template-rows: repeat(2, 50px);
+    grid-template-columns: repeat(3, 1fr) 15px; /*we can use repeat for repeating the property into a row or a column.*/
+    grid-gap: 10px 10px; /*the first value is for rows and the second one is for columns, this accept em,px*/
+    /*grid-template-rows: [row-1-inicio] 50px [row-2-inicio] 50px [row-3-fin];*/
+    grid-template-rows: repeat(2, [row-inicio] 50px [row-end]);
+    /*grid-template-columns: [col-1-inicio] 1fr [col-2-inicio] 1fr [col-3-inicio] 1fr [col-4-fin];*/
+    grid-template-columns: repeat(3, [col-inicio] 1fr [col-end]);
+
+}   
+
+.element{
+    background-color: white;
+}
+
+/*if we want that our element take up the etire row of columns we can do this*/
+
+.header1{
+    /* Large way 
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;*/
+
+    /*short way*/
+    grid-column: col-inicio/ col-end 3; /*this takes the first column and takes up until the column number six */
+    grid-row: row-inicio / row-end 3; /*this do the same for rows*/
+}
+
+
+.grid2{
+    background-color: red;
+    display: grid; 
+    grid-template-rows: repeat(2, [row-inicio] 50px [row-end]);
+    grid-template-columns: repeat(3, [col-inicio] 1fr [col-end]);
+    grid-template-areas: "header header" /*this especify the content of the grid explicitly*/
+                        "content slidebar"
+                        "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+    grid-auto-rows: 140px; /* all rows that we haven´t define explicitly are going to have this height value*/
+    grid-auto-flow: row; /*if we indicate column, the flow of our grid goes left to right, if we espicify row, goes up to down*/
+    justify-items: stretch;/*this takes content into the grid and center it in its horizontal axis, we can use stretch, start, end, */
+    align-items: stretch; /*align verticaly the items*/
+
+}   
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+/*for align an individual item we could do this*/
+
+.item-1{
+    justify-self: center; /*this property adjust the item itself*/
+    align-self: center;
+}
+
+/*Here we work with grid3, alignment of a entire grid*/
+
+.grid3{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(4, 30px);
+    grid-gap: 5px;
+    /*justify-content: space-evenly; distributte the content equivalently*/
+    justify-content: center;
+    align-content: space-between;
+}

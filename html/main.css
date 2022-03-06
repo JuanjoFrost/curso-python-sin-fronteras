@@ -1,0 +1,416 @@
+body {
+    background-color: #eeeeee;
+    color: red;
+}
+
+#parrafo{
+    color: blue;
+}
+
+.etiqueta {
+    color: #00aa00;
+}
+
+.caja {
+    margin: 9px;
+    background-color: #aaff;
+    padding: 8px;
+    border-style: dotted dashed solid double;
+    border-width: 8px;
+    border-color: #faa;
+    border-left: 6px solid #afa;
+    border-radius: 4px;
+    height: 100px;
+    width: 100px;
+    color: #575;
+}
+
+.cajaEj{
+    margin: 10px;
+    border: 8px;
+    background-color: #eeeee1;
+    color: black;
+    border-style: none solid solid solid;
+    border-color: grey;
+    border-width: 2px;
+}
+
+.botonA{
+    color: white;
+    background-color: blue;
+    margin: 8px;
+}
+
+.botonC{
+    color: black;
+    background-color: grey;
+}
+
+.propiedadesP {
+    font-family: 'Segoe UI';
+    font-style: oblique;
+    font-size: 1.5em;
+    color: #222fff;
+    text-align: justify;
+    text-indent: 15px;
+    line-height: 1.7;
+    word-spacing: 10px;
+    text-shadow: 1px 2px 5px rgba(0,0,0,0.3)
+}
+
+a {
+   color: hotpink; 
+   text-decoration: none; 
+   text-transform: lowercase;
+   letter-spacing: 3px;
+   
+}
+
+#a2 {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+a:link {
+    color: pink;
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:active {
+    color: black;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    background-color: #fff;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    padding-left: 0px;
+}
+
+li {
+    border-bottom: solid 1px #ddd;
+    padding: 15px;
+}
+
+.tablita {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+.tablita tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tablita td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tablita th {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.bloque {
+    display: inline;
+}
+
+#invisible {
+    display: none;
+}
+.paramax{
+    max-width: 350px;
+    background-color: #f00;
+    color: black;
+    margin: auto;
+    position:fixed;
+    right: 15px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: auto;
+}
+
+#over{
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+}
+
+
+fieldset div img:hover {
+    opacity: 0.9;
+}
+
+#barraNavegacion {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: cadetblue;
+}
+
+#barraNavegacion li {
+    float: left;
+}
+
+#barraNavegacion li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+#barraNavegacion li:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.dropdown-btn{
+    background-color: rgba(255,50,150,0.7);
+    padding: 16px;
+    color:rgba(0,0,0,0.9);
+    font-size: 16px ;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position:absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgb(180, 180, 180);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px; /*first is vertical padding, second horizontal padding*/
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-btn {
+    background-color: #3e8e41;
+}
+
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+
+input[type=text]{ /*we can do this with inputs with the same type*/
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 100%;
+    background-color: #4CAF50;
+    Padding: 14px 5px;
+    margin: 8px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.box{
+    background-color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 3px rgb(180, 180, 180);
+}
+
+.textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.fondo{
+    height: 400px;
+    background-color: red;
+    color:white;
+    background: green url('http://placekitten.com/200/300') no-repeat left top fixed;
+    background-size: cover;
+    /*
+    background-image: url('http://placekitten.com/200/300');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: scroll; this is for no movement when we scroll the page 
+    background-size:cover; we cover the div with entire photography*/
+}
+
+.gradiantColor{
+    background-image: linear-gradient(to bottom, white, #ccc); /*first goes the direction, second the primary color, third the secundary gradiant color 
+    in case we want do it in diagonal we have to put a directon next to the first attribute*/
+}
+
+.sombra{
+    /* (vertical displacement, horizontal displacement, difumination, inset*)*/
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.2);/* we can add inset to invert the shadow*/
+}
+
+.sombraParrafo{
+    color:white;
+    text-shadow:  0px 0px 5px rgba(0,0,0,0.3);
+}
+
+.transform2d{
+    position: relative;
+    left: 30px;
+    background-color: white;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.1);
+    width: 100px;
+    height: 100px;
+    /* the property of transform only applies to classes that contains inline-block property, display-block comes by default in divs*/
+    transform: rotate(20deg); /* this rotate based on clock´s handles depending on the degrees*/   
+    /*transform: translate(50px, 30px); /*first position is  x axis, the second is y axis*/
+    transform: skew(25deg, 4deg); /* skew bend the div, the first position bend the axis x and the second y axis */
+}
+
+/*
+.transform2d:hover {
+    transform: scale(1.05,1.05); this transform respect to the original size of the box we use scaleY or scaleX for moving the element to its axis.
+    
+}*/
+
+.transform3d{
+    position: relative;
+    left: 30px;
+    background-color: white;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.1);
+    width: 100px;
+    height: 100px;
+    transform: rotateX(40deg); /* this property bend to backguard the div. Exist rotateY rotateZ.*/
+}
+
+.animatedTransition{
+    position: relative;
+    left: 30px;
+    background-color: white;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.1);
+    width: 100px;
+    height: 100px;
+    transition: 0.2s; 
+    transition-delay: 0.3s;
+}
+
+.animatedTransition:hover{
+    transform: scale(1.2, 1.2);
+    background-color: rgba(0,0,0,0.02);
+    cursor: pointer;
+}
+
+/*Ejercicio Cajas*/
+.divScale{
+    position: relative;
+    background-color: white;
+    width: 300px;
+    height: 70px;
+    border-left: solid 3px red;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    transition: 0.2s;
+    left: 30px;
+    color: black;
+}
+
+.divScale p {
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    top: 30%;
+}
+
+.divScale:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.divShadow{
+    position:relative;
+    left: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    width: 300px;
+    height: 70px;
+    color: black;
+    border-left: solid 3px green;
+    font-size:20px;
+    text-align: center;
+    transition: 0.3s
+}
+
+.divShadow p {
+    position: relative;
+    text-align: center;
+    top: 30%;
+}
+
+.divShadow:hover{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.9);
+}
+
+.divActive{
+    position:relative;
+    left: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    width: 300px;
+    height: 70px;
+    color: black;
+    border-left: solid 3px green;
+    font-size:20px;
+    text-align: center;
+    transition: 0.3s
+}
+
+.divActive p {
+    position: relative;
+    text-align: center;
+    top: 30%;
+}
+
+.divActive:hover{
+    background-color: #ccc;
+}
+
+
+
+

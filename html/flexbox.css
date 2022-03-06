@@ -1,0 +1,44 @@
+body{
+    width: 700px;
+}
+
+.flex{
+    display: flex;
+    /*flex-direction: row-reverse; this change the direction of our row to opposite
+    flex-direction: column;
+    flex-direction: column-reverse;*/
+    flex-wrap: wrap; /*this wrap the content if the content overflow out of the div
+    we could use wrap-inverse that do the same but invert to up of the content*/
+    flex-flow: row wrap; /*this is the short way*/
+    justify-content: center; /*this align the content of our flexBox, we could use 
+    space-between, space-around, space-evenly*/
+    /*align-items: stretch;  flex-end, stretch, center could be used here, etc*/
+    height: 200px;
+    align-content: space-evenly; /* this carry out the content to the center of the container
+    we can use flex-end, stretch, flex-start, flex-end, space-evenly, etc*/
+}
+
+.red{
+    background-color: red;
+}
+
+.flex2{
+    display: flex;
+    flex-flow: row wrap;
+    height: 200px;
+}
+
+.primero{
+    order:1; /*order align items depending of its value, more value it will be align to right, less value will be align to left.*/
+    flex-grow: 1; /* this allows elements grow, the fefault value is 0*/
+    flex-basis: 20px;
+}
+
+.segundo{
+    order:0;
+    flex-grow: 1;
+}
+
+.tercero{
+    flex-grow: 3;
+}
